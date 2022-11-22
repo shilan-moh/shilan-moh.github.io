@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e843e2fcba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shilan-Moh Portfolio</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <h1>
+              <a href="index.html">
+                <!--<span class="fa-solid fa-seedling" aria-hidden="true"></span>
+                        <span> Shilan Mohammadi</span>-->
+                <img src="./img/Logo2.png" class="logo" />
+              </a>
+            </h1>
+            <!--<h1>
+                    <a href="index.html">
+                        <span class="fa-solid fa-seedling" aria-hidden="true"></span>
+                        <span> Shilan Mohammadi</span>
+                     </a>
+                </h1>-->
+          </li>
+          <li>
+            <a href="index.html#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="index.html#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#LinkedIn">
+              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span class="sr-only">LinkdIn</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#github">
+              <span
+                class="fa-brands fa-github-square"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
+          <li>
+            <a href="#resume" class="button">Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Section introduction-->
+      <section id="intro">
+        <p class="name">Hi, my name is <span>Shilan Mohammadi,</span></p>
+        <h2>I am a front-end developer.</h2>
+        <p class="intro-paragraph">
+          I am a front-end developer with +3 years of experience. I have been
+          involved in front-end systems in various aspects, from designing,
+          developing, deploying, and maintaining. I strive to improve the way a
+          front-end system is designed, implemented, and made available to end
+          users and make this process as smooth and abstract as possible.
+        </p>
+        <p>
+          Currently, I am a master's student at
+          <a
+            href="https://www.su.se/institutionen-for-data-och-systemvetenskap/"
+            target="_blank"
+            >Stockholm University</a
+          >
+          studying Computer and System Sciences.
+        </p>
+      </section>
+      <div class="gradient"></div>
+
+      <!-- instructions in JavaScript block -->
+      <div class="section-projects">
+        <section id="projects">
+          <h2>Projects I'm proud of</h2>
+          <article>
+            <div class="text">
+              <h4>Latest Project</h4>
+              <h3>
+                <a href="#" class="project-title-link"
+                  >Online shopping Website</a
+                >
+              </h3>
+              <p class="project-description-box">
+                I start designing the website wireframe by Figma. functional
+                programming is used for this online shopping website. A
+                declarative programming paradigm where programs are constructed
+                by applying and composing functions in which function
+                definitions are trees of expressions that map values to other
+                values.
+                <br />It is
+                <a href="https://frontendmasters.github.io/bootcamp/mole"
+                  >an open-source code</a
+                >
+                and you can see the <a href="#">result here</a> and .
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>SVG</li>
+              </ul>
+            </div>
+            <img
+              src="img/online-shop store.png"
+              alt="Screenshot online shopping website."
+            />
+          </article>
+          <article class="reverse">
+            <div class="text">
+              <h4>BootCamp Project</h4>
+              <h3>
+                <a
+                  href="https://vanillajs-weatherapp-sh.netlify.app/"
+                  class="project-title-link"
+                  >Weather forecast website</a
+                >
+              </h3>
+              <p class="project-description-box">
+                This project was designed during the SheCodes Bootcamp. This
+                application shows the current weather and six-day forecast. All
+                the elements like icons and temperature and description are
+                obtained from weather API.
+                <br />It is
+                <a href="https://frontendmasters.github.io/bootcamp/mole"
+                  >an open-source code</a
+                >
+                and you can see the
+                <a href="https://vanillajs-weatherapp-sh.netlify.app/"
+                  >result here</a
+                >
+                and .
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>API</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <img
+              src="img/forecast-weather-App.png"
+              alt="Screenshot of the Frontend Masters Bootcamp."
+              style="margin-left: 55px"
+            />
+          </article>
+          <article>
+            <div class="text">
+              <h4>BootCamp Project</h4>
+              <h3>
+                <a
+                  href="todoList/todoHtml.html"
+                  class="project-title-link"
+                  target="_blank"
+                  >TO-DO list</a
+                >
+              </h3>
+              <p class="project-description-box">
+                Description of the project. This should be fairly concise while
+                also describing the key components that you developed or worked
+                on. It can be as long as you need it to be but should at least
+                be a few sentences long. Be sure to include specific links
+                anywhere in the description. A link looks like
+                <br />It is
+                <a href="https://github.com/shilan-moh/todo"
+                  >an open-source code</a
+                >
+                and you can see the
+                <a href="todoList/todoHtml.html " target="_blank"
+                  >result here</a
+                >
+                and .
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <img
+              src="img/todo2.png"
+              alt="Screenshot of the Wall of Wonder Collections."
+            />
+          </article>
+        </section>
+      </div>
+
+      <div class="gradient"></div>
+
+      <div class="section-contact">
+        <section id="contact">
+          <h2>Contact me</h2>
+          <p>spread happiness and grow your professional network</p>
+          <p>
+            <a href="mailto:jen@example.com" class="email-button">Email me</a>
+          </p>
+        </section>
+      </div>
+
+      <div class="gradient"></div>
+
+      <footer>
+        <h3>Shilan Mohammadi &middot Frontend Developer</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/shilan-mohammadi/">
+              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/shilan-moh">
+              <span
+                class="fa-brands fa-github-square"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mohammadi.shilann@gmail.com">
+              <span
+                class="fa-solid fa-square-envelope"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Email</span>
+            </a>
+          </li>
+        </ul>
+
+        <p><small>&copy; 2021 Shilan Moh. All rights reserved.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
