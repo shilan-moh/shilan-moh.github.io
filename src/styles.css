@@ -217,7 +217,7 @@ nav [class*="fa-"]:hover {
 }
 .project-description-box {
   background-color: var(--back-groundColor);
-
+  opacity: 0.9;
   border-radius: 10px;
   padding: 1rem;
   font-size: 14px;
@@ -239,12 +239,24 @@ nav [class*="fa-"]:hover {
 }
 #projects img {
   margin: 2rem 0 4rem 0;
+
   padding: 1rem;
   border-top: 2px solid var(--light-blue);
-  border-left: 2px solid var(--light-blue);
   border-radius: 25px;
   width: 500px;
   height: 400px;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+}
+#projects img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.border-right {
+  border-right: 2px solid var(--light-blue);
+}
+.border-left {
+  border-left: 2px solid var(--light-blue);
 }
 /*footer*/
 footer {
@@ -261,6 +273,10 @@ footer ul {
   justify-content: center;
   gap: 3rem;
 }
+.projects-content {
+  display: flex;
+  align-items: center;
+}
 
 /*responsive design*/
 @media (min-width: 800px) {
@@ -269,19 +285,21 @@ footer ul {
     grid-template-columns: repeat(10, 1fr);
   }
   #projects {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 100px 0;
   }
   #projects img {
     grid-column: 1/6;
     grid-row: 1/2;
   }
-  .text {
+  .projects-content {
     grid-column: 5/11;
     grid-row: 1/2;
     order: 2;
     text-align: right;
   }
+
   #projects ul {
     justify-content: flex-end;
   }
@@ -289,7 +307,7 @@ footer ul {
     grid-column: 6/11;
     grid-row: 1/2;
   }
-  #projects .reverse .text {
+  #projects .reverse .projects-content {
     grid-column: 1/7;
     order: 2;
     text-align: left;
