@@ -1,0 +1,175 @@
+:root {
+  --headerfont-playfair: "Playfair Display", serif;
+  --textfont-poppins: "Poppins", sans-serif;
+  --orange: #828903;
+  --white: #ffffff;
+  --darkmode-background: #2e3740;
+  --dark-color: #2e3740;
+  --highlighter: #f25774;
+  --header-color: #ba1c59;
+  --light-color-blue: #d0f2e9;
+  --background-light: #e2e2e2;
+  --font-size: 1.3rem;
+}
+
+/* Generic Styles of the page*/
+html {
+  box-sizing: border-box;
+}
+* {
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-light);
+  font-family: var(--textfont-poppins);
+  color: var(--dark-color);
+}
+body.dark {
+  background-color: var(--dark-color);
+}
+
+body.dark p {
+  color: var(--white);
+}
+body.dark h2,
+body.dark h3,
+body.dark h4 {
+  color: var(--light-color-blue);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--headerfont-playfair);
+  color: var(--dark-color);
+}
+
+.hidden-visibility {
+  display: none;
+}
+/* div background */
+
+body.dark .gradient {
+  background: rgb(186, 28, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 28, 89, 1) 0%,
+    rgba(242, 87, 116, 1) 30%,
+    rgba(208, 242, 233, 1) 45%,
+    rgba(208, 242, 233, 1) 55%,
+    rgba(242, 87, 116, 1) 70%,
+    rgba(186, 28, 89, 1) 100%
+  );
+}
+.gradient {
+  background: rgb(46, 55, 64);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 55, 64, 1) 0%,
+    rgba(186, 28, 89, 1) 22%,
+    rgba(242, 87, 116, 1) 43%,
+    rgba(242, 87, 116, 1) 59%,
+    rgba(186, 28, 89, 1) 82%,
+    rgba(46, 55, 64, 1) 100%
+  );
+  height: 2px;
+}
+
+.bg-color {
+  background-color: var(--dark-color);
+}
+.name-style {
+  font-family: var(--headerfont-playfair);
+}
+/*-------Navbar-------------*/
+nav [class*="fa-"] {
+  font-size: 35px;
+  color: var(--highlighter);
+}
+.nav-link {
+  color: var(--light-color-blue);
+}
+.nav-link:hover {
+  color: var(--highlighter);
+}
+/*------ contact section ------------*/
+#contact {
+  font-size: 17px;
+  text-align: center;
+  width: 500px;
+  padding: 2rem 0;
+  margin: 0 auto;
+  line-height: 50px;
+}
+.contact-icon-color {
+  color: var(--highlighter);
+}
+/*--------------Buttons-------------------*/
+.buttons {
+  background-color: var(--dark-color);
+  color: var(--light-color-blue);
+  font-family: var(--textfont-poppins);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  border: 2px solid var(--light-color-blue);
+}
+.btn-nav {
+  background-color: var(--dark-color);
+}
+.button {
+  padding: 0.5rem;
+  font-weight: 300;
+}
+.buttons:hover {
+  color: var(--light-color-blue);
+  background-color: var(--highlighter);
+  border: 2px solid var(--light-color-blue);
+}
+.email-button {
+  font-size: 18px;
+  padding: 15px 25px;
+  font-weight: 300;
+}
+
+.btn-branding-secondary {
+  font-size: 20px;
+}
+
+body.dark .buttons {
+  border: 1px solid var(--light-color-blue);
+  color: var(--highlighter);
+}
+body.dark .buttons:hover {
+  border: 1px solid var(--light-color-blue);
+  color: var(--dark-color);
+  background-color: var(--background-light);
+}
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+#contact ul {
+  list-style-type: none;
+  font-size: 3rem;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: flex wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+@media (max-width: 850px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}

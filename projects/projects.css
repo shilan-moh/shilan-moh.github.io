@@ -1,0 +1,49 @@
+:root {
+  --headerfont-playfair: "Playfair Display", serif;
+  --textfont-poppins: "Poppins", sans-serif;
+  --orange: #828903;
+  --white: #ffffff;
+  --darkmode-background: #2e3740;
+  --dark-color: #2e3740;
+  --highlighter: #f25774;
+  --header-color: #ba1c59;
+  --light-color-blue: #d0f2e9;
+  --background-light: #e2e2e2;
+}
+a {
+  font-weight: 500;
+  color: var(--highlighter);
+  text-decoration: none;
+}
+
+#projects-details {
+  padding: 4rem 1rem 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: justify;
+}
+#projects-details h2 {
+  font-family: var(--textfont-poppins);
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.projects-details a {
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  color: var(--dark-color);
+}
+#projects-details ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+}

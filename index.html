@@ -4,117 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css bootstrap-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="src/styles.css" />
-
+    <!--google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwsome kit (icons)-->
     <script
       src="https://kit.fontawesome.com/e843e2fcba.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" type="text/css" href="src/main.css" />
+    <link rel="stylesheet" type="text/css" href="src/home.css" />
+
     <title>Shilan-Moh Portfolio</title>
   </head>
 
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <h1>
-              <a href="index.html">
-                <!--<span class="fa-solid fa-seedling" aria-hidden="true"></span>
-                        <span> Shilan Mohammadi</span>-->
-                <img src="src/img/Logo2.png" class="logo" />
-              </a>
-            </h1>
-            <!--<h1>
-                    <a href="index.html">
-                        <span class="fa-solid fa-seedling" aria-hidden="true"></span>
-                        <span> Shilan Mohammadi</span>
-                     </a>
-                </h1>-->
-          </li>
-          <li>
-            <a href="gallery/gallery.html" target="_blank">Gallery</a>
-          </li>
-          <li>
-            <a href="index.html#projects">Projects</a>
-          </li>
+    <div class="container-md">
+      <!--Navbar section-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top pt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="./index.html">
+            <img
+              src="./img/logo.png"
+              alt=""
+              width="100%"
+              height="40"
+              id="show-light-img"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <li>
-            <a href="index.html#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#LinkedIn">
-              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-              <span class="sr-only">LinkdIn</span></a
-            >
-          </li>
-
-          <li>
-            <a href="#github">
-              <span
-                class="fa-brands fa-github-square"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Github</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://resume67.netlify.app/"
-              target="_blank"
-              id="resume"
-              class="button"
-              >Resume</a
-            >
-          </li>
-        </ul>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Projects/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery/gallery.html">Gallery</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto me-3">
+              <li class="nav-item col-4 col-md-auto">
+                <a
+                  class="nav-link p-2"
+                  href="https://github.com/shilan-moh"
+                  target="_blank"
+                >
+                  <span class="sr-only">Github</span>
+                  <span
+                    class="fa-brands fa-github-square"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-auto">
+                <a
+                  class="nav-link p-2"
+                  href="https://www.linkedin.com/in/shilan-mohammadi/"
+                  target="_blank"
+                >
+                  <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                  <span class="sr-only">LinkdIn</span>
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-auto mt-1">
+                <a
+                  class="btn p-2 button buttons d-lg-inline-block my-2 my-md-0 ms-md-3 btn-nav"
+                  href="./img/shilan-mohammadi-resume.jpg"
+                >
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item col-4 col-md-auto mt-1">
+                <a
+                  id="change-theme-button"
+                  class="btn p-2 button buttons d-lg-inline-block my-2 my-md-0 ms-md-3 dark-mode btn-nav change-theme-button"
+                  href="#"
+                >
+                  Dark Mode
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <!--Section introduction-->
-      <section id="intro">
-        <p class="name">Hi, my name is <span>Shilan Mohammadi,</span></p>
-        <h2>I am a front-end developer.</h2>
-        <p class="intro-paragraph">
-          I am a front-end developer with +3 years of experience. I have been
-          involved in front-end systems in various aspects, from designing,
-          developing, deploying, and maintaining. I strive to improve the way a
-          front-end system is designed, implemented, and made available to end
-          users and make this process as smooth and abstract as possible.
-        </p>
-        <p>
-          Currently, I am a master's student at
-          <a
-            href="https://www.su.se/institutionen-for-data-och-systemvetenskap/"
-            target="_blank"
-            >Stockholm University</a
-          >
-          studying Computer and System Sciences.
-        </p>
+
+      <section id="intro" class="intro ps-2 pe-2 mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <p class="name">Hi, my name is <span>Shilan Mohammadi,</span></p>
+              <h2>I am a front-end developer.</h2>
+              <p class="intro-paragraph">
+                I am a front-end developer with +3 years of experience. I have
+                been involved in front-end systems in various aspects, from
+                designing, developing, deploying, and maintaining. I strive to
+                improve the way a front-end system is designed, implemented, and
+                made available to end users and make this process as smooth and
+                abstract as possible.
+              </p>
+              <p>
+                Currently, I am a master's student at
+                <a
+                  href="https://www.su.se/institutionen-for-data-och-systemvetenskap/"
+                  target="_blank"
+                  >Stockholm University</a
+                >
+                studying Computer and System Sciences.
+              </p>
+            </div>
+            <div class="col-md-5 ps-5 mt-5">
+              <img src="./img/img4.png" alt="" class="img-fluid" />
+
+              <div class="d-grid gap-2">
+                <a href="" class="btn buttons btn-branding-secondary">
+                  View detailed project
+                </a>
+                <a href="" class="btn buttons btn-branding-secondary">
+                  Contact me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <div class="gradient"></div>
 
-      <!-- instructions in JavaScript block -->
+      <!--------------------------- Projects sections--------------------- -->
       <div class="section-projects">
         <section id="projects">
-          <h2>Projects I'm proud of</h2>
+          <h2 style="text-align: center">Latest Projects I'm proud of</h2>
+          <!---------------First Project: Online shopping Website------------->
 
-          <article>
-            <div class="projects-content">
-              <div class="text">
-                <h4>Latest Project</h4>
+          <div class="container normal">
+            <div class="row">
+              <div class="col-md">
+                <img
+                  class="img"
+                  src="img/online-shop-store.png"
+                  alt="Screenshot online shopping website."
+                />
+              </div>
+              <div class="col-md mt-3">
                 <h3>
                   <a
                     href="https://tandis-shop.netlify.app/"
@@ -123,7 +187,7 @@
                   >
                 </h3>
                 <p class="project-description-box">
-                  I start designing the website wireframe by Figma. functional
+                  I started designing the website wireframe by Figma. functional
                   programming is used for this online shopping website. A
                   declarative programming paradigm where programs are
                   constructed by applying and composing functions in which
@@ -134,7 +198,8 @@
                     >an open-source code</a
                   >
                   and you can see the
-                  <a href="https://tandis-shop.netlify.app/">result here</a>.
+                  <a href="https://tandis-shop.netlify.app/">result here</a> and
+                  .
                 </p>
                 <h4>Technologies used include:</h4>
                 <ul>
@@ -145,20 +210,16 @@
                 </ul>
               </div>
             </div>
-            <img
-              src="src/img/online-shop store.png"
-              class="border-left"
-              alt="Screenshot online shopping website."
-            />
-          </article>
-          <article class="reverse">
-            <div class="projects-content">
-              <div class="text">
-                <h4>BootCamp Project</h4>
+          </div>
+          <!--------------------Second   reverse: Weather forecast website------------------------------------------>
+          <div class="container reverse">
+            <div class="row">
+              <div class="col-md mt-3">
                 <h3>
                   <a
                     href="https://vanillajs-weatherapp-sh.netlify.app/"
                     class="project-title-link"
+                    target="_blank"
                     >Weather forecast website</a
                   >
                 </h3>
@@ -179,46 +240,52 @@
                 </p>
                 <h4>Technologies used include:</h4>
                 <ul>
+                  <li>API</li>
                   <li>JavaScript</li>
                   <li>CSS</li>
-                  <li>API</li>
                   <li>HTML</li>
                 </ul>
               </div>
+              <div class="col-md">
+                <img
+                  class="img"
+                  src="img/forecast-weather-App.png"
+                  alt="Screenshot online shopping website."
+                />
+              </div>
             </div>
-            <img
-              src="src/img/forecast-weather-App.png"
-              class="border-right"
-              alt="Screenshot of the weather app."
-            />
-          </article>
-          <article>
-            <div class="projects-content">
-              <div class="text">
-                <h4>BootCamp Project</h4>
+          </div>
+          <!---------------Third project Normal------------------->
+          <div class="container normal">
+            <div class="row">
+              <div class="col-md">
+                <img
+                  class="img project-img"
+                  src="img/todo2.png"
+                  alt="Screenshot online shopping website."
+                />
+              </div>
+              <div class="col-md mt-3">
                 <h3>
                   <a
-                    href="todoList/todoHtml.html"
-                    class="project-title-link"
+                    href="./todoList/todo.html"
                     target="_blank"
+                    class="project-title-link"
                     >TO-DO list</a
                   >
                 </h3>
                 <p class="project-description-box">
-                  Description of the project. This should be fairly concise
-                  while also describing the key components that you developed or
-                  worked on. It can be as long as you need it to be but should
-                  at least be a few sentences long. Be sure to include specific
-                  links anywhere in the description. A link looks like
+                  Using Figma, I designed the wireframe for the TODO-list
+                  project. Users can add a new task, which would be visible in a
+                  list. It is possible to mark each task as done or to delete
+                  it. Users can also filter the results based on whether they
+                  have completed or not completed a task.
                   <br />It is
-                  <a
-                    href="https://github.com/shilan-moh/shilan-moh.github.io/blob/main/TodoList/todoHtml.html"
+                  <a href="https://github.com/shilan-moh/todo"
                     >an open-source code</a
                   >
                   and you can see the
-                  <a href="https://hi-todo-list.netlify.app/ " target="_blank"
-                    >result here</a
-                  >
+                  <a href="todoList/todo.html" target="_blank">result here</a>
                   and .
                 </p>
                 <h4>Technologies used include:</h4>
@@ -229,63 +296,75 @@
                 </ul>
               </div>
             </div>
-
-            <img
-              src="src/img/todo2.png"
-              class="projects-img"
-              class="border-left"
-              alt="Screenshot of the Wall of Wonder Collections."
-            />
-          </article>
+          </div>
         </section>
       </div>
 
       <div class="gradient"></div>
+      <!------------Contact--------------->
 
       <div class="section-contact">
         <section id="contact">
-          <h2>Contact me</h2>
-          <p>spread happiness and grow your professional network</p>
-          <p>
-            <a href="mailto:jen@example.com" class="email-button">Email me</a>
-          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2>Contact me</h2>
+                <p>spread happiness and grow your professional network</p>
+
+                <div class="d-grid gap-2">
+                  <a href="" class="btn buttons btn-branding-secondary">
+                    Contact me
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/shilan-mohammadi/">
+                      <span
+                        class="fa-brands fa-linkedin contact-icon-color"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">LinkedIn</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shilan-moh">
+                      <span
+                        class="fa-brands fa-github-square contact-icon-color"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Github</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:mohammadi.shilann@gmail.com">
+                      <span
+                        class="fa-solid fa-square-envelope contact-icon-color"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="sr-only">Email</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 
       <div class="gradient"></div>
 
+      <!------------Footer--------------->
       <footer>
         <h3>Shilan Mohammadi &middot Frontend Developer</h3>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/shilan-mohammadi/">
-              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-              <span class="sr-only">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/shilan-moh">
-              <span
-                class="fa-brands fa-github-square"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:mohammadi.shilann@gmail.com">
-              <span
-                class="fa-solid fa-square-envelope"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Email</span>
-            </a>
-          </li>
-        </ul>
-
         <p><small>&copy; 2021 Shilan Moh. All rights reserved.</small></p>
       </footer>
     </div>
+
     <script src="./src/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

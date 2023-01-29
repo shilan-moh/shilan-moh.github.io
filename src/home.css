@@ -1,0 +1,213 @@
+a {
+  font-weight: 600;
+  color: var(--highlighter);
+  text-decoration: none;
+}
+/* intro style*/
+#intro {
+  padding: 4rem 1rem 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.intro-paragraph {
+  font-size: 17px;
+  line-height: 32px;
+  text-align: justify;
+}
+#intro .name {
+  font-size: 1rem;
+  margin-top: 5rem;
+}
+.name span {
+  font-family: var(--headerfont-playfair);
+  font-size: 3rem;
+  font-weight: 500;
+  display: block;
+}
+#intro h2 {
+  font-family: var(--textfont-poppins);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+/*--------------Buttons-------------------*/
+.buttons {
+  background-color: var(--dark-color);
+  color: var(--light-color-blue);
+  font-family: var(--textfont-poppins);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  border: 2px solid var(--light-color-blue);
+}
+.btn-nav {
+  background-color: var(--dark-color);
+}
+.button {
+  padding: 0.5rem;
+  font-weight: 300;
+}
+.buttons:hover {
+  color: var(--light-color-blue);
+  background-color: var(--highlighter);
+  border: 2px solid var(--light-color-blue);
+}
+.email-button {
+  font-size: 18px;
+  padding: 15px 25px;
+  font-weight: 300;
+}
+
+.btn-branding-secondary {
+  font-size: 20px;
+}
+
+body.dark .buttons {
+  border: 1px solid var(--light-color-blue);
+  color: var(--highlighter);
+}
+body.dark .buttons:hover {
+  border: 1px solid var(--light-color-blue);
+  color: var(--dark-color);
+  background-color: var(--background-light);
+}
+/* --------------projects section------------ */
+body.dark .section-projects {
+  background-color: var(--dark-color);
+}
+
+#projects {
+  padding: 4rem 1rem;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  line-height: 50px;
+}
+
+#projects h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+body.dark .project-title-link {
+  color: var(--light-color-blue);
+}
+.project-title-link {
+  text-decoration: none;
+  color: var(--highlighter);
+  font-size: 25px;
+  text-align: center;
+}
+body.dark .project-description-box {
+  background-color: var(--dark-color);
+  border: 1px solid var(--light-color-blue);
+}
+.project-description-box {
+  background-color: whitesmoke;
+  border: 1px solid var(--highlighter);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 14px;
+  line-height: 1.7rem;
+  text-align: justify;
+  opacity: 0.9;
+}
+#projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--highlighter);
+}
+#projects img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+body.dark .img {
+  border-top: 2px solid var(--light-color-blue);
+}
+.img {
+  border-top: 2px solid var(--highlighter);
+  transition: transform 0.25s ease-out;
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
+  border-radius: 25px;
+  width: 500px;
+  height: 400px;
+}
+body.dark .normal img {
+  border-left: 2px solid var(--light-color-blue);
+}
+.normal img {
+  border-left: 2px solid var(--highlighter);
+}
+body.dark .reverse img {
+  border-right: 2px solid var(--light-color-blue);
+}
+.reverse img {
+  border-right: 2px solid var(--highlighter);
+}
+/*footer*/
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+#contact ul {
+  list-style-type: none;
+  font-size: 3rem;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: flex wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/*responsive design*/
+@media (min-width: 800px) {
+  #projects {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 850px) {
+  .name span {
+    font-family: var(--headerfont-playfair);
+    font-size: 2rem;
+    color: var(--light-blue);
+    font-weight: 100;
+    display: block;
+  }
+  #intro img {
+    display: none;
+  }
+
+  #intro h2 {
+    font-size: 1.5rem;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+  .img {
+    display: none;
+  }
+}
