@@ -1,22 +1,25 @@
-* {
-  box-sizing: border-box;
+:root {
+  --headerfont-playfair: "Playfair Display", serif;
+  --textfont-poppins: "Poppins", sans-serif;
+  --orange: #828903;
+  --white: #ffffff;
+  --darkmode-background: #2e3740;
+  --dark-color: #2e3740;
+  --highlighter: #f25774;
+  --header-color: #ba1c59;
 }
-
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #ebe7e7;
-}
-
 .header {
+  padding: 4rem 1rem 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
   padding: 32px;
-  background: #e0dddd;
 }
+
 h1 {
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 50px;
+  font-family: var(--headerfont-playfair);
+  font-size: 3rem;
   color: #230f0f;
 }
 #gallery {
@@ -34,12 +37,16 @@ h1 {
   height: 300px;
   object-fit: cover;
   margin-top: 8px;
-  padding: 0 4px;
+  padding: 2px 6px;
   border-radius: 10px;
 }
 
 @media (max-width: 800px) {
   #gallery img {
     width: 50%;
+  }
+  h1 {
+    font-size: 20px;
+    color: #230f0f;
   }
 }
